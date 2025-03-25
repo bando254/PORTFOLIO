@@ -106,7 +106,7 @@ html { scroll-behavior: smooth; }
 .nav ul li a {
   text-decoration: none;
   font-weight: bold;
-  color: black;
+  color: rgb(224, 209, 209);
 }
 
 /* About Section */
@@ -114,7 +114,7 @@ html { scroll-behavior: smooth; }
   background: url('eos.jpg') no-repeat center center/cover;
   color: var(--text-light);
   padding: 100px var(--spacing);
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 4px blue(0, 0, 0, 0.5);
 }
 
 .about h2 {
@@ -163,6 +163,45 @@ html { scroll-behavior: smooth; }
   transform: translateY(-5px);
   background-color: var(--secondary-color);
 }
+
+/* Home Section */
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh; /* Full viewport height */
+  background: url('your-background-image.jpg') no-repeat center center/cover; /* Replace with your actual image */
+  color: var(--text-light);
+  padding: 20px;
+}
+
+.home h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 5px rgba(53, 5, 245, 0.5);
+}
+
+.home p {
+  font-size: 1.5rem;
+  max-width: 600px;
+  line-height: 1.6;
+  text-shadow: 1px 1px 4px rgba(43, 3, 242, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .home h1 {
+    font-size: 2.5rem;
+  }
+
+  .home p {
+    font-size: 1.2rem;
+  }
+}
+
 
 /* Projects Section */
 .projects {
@@ -274,4 +313,13 @@ html { scroll-behavior: smooth; }
   .contact form {
     width: 90%;
   }
+}
+
+
+body {
+  font-family: var(--font-family);
+  line-height: 1.6;
+  text-align: center;
+  background: url('canon.jpg') no-repeat center center/cover;
+  color: var(--text-dark);
 }
