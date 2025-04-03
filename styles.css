@@ -157,10 +157,28 @@ body {
   gap: 20px;
 }
 
-.service-box {
-  background: #333;
-  padding: 20px;
-  border-radius: 10px;
+.service-box:nth-child(1) {
+  background: #FF6347; /* Tomato */
+}
+
+.service-box:nth-child(2) {
+  background: #32CD32; /* Lime Green */
+}
+
+.service-box:nth-child(3) {
+  background: #1E90FF; /* Dodger Blue */
+}
+
+.service-box:nth-child(4) {
+  background: #FFD700; /* Gold */
+}
+
+.service-box:nth-child(5) {
+  background: #8A2BE2; /* Blue Violet */
+}
+
+.service-box:nth-child(6) {
+  background: #FF1493; /* Deep Pink */
 }
 
 /* Featured Projects Section */
@@ -175,15 +193,23 @@ body {
   gap: 20px;
 }
 
-.project-box {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: left;
+.project-box:nth-child(1) {
+  background: #FFD700; /* Gold */
 }
 
-/* Gallery Section */
+.project-box:nth-child(2) {
+  background: #8A2BE2; /* Blue Violet */
+}
+
+.project-box:nth-child(3) {
+  background: #FF1493; /* Deep Pink */
+}
+
+.project-box:nth-child(4) {
+  background: #FF6347; /* Tomato */
+}
+
+/* Gallery Section - Inline-block */
 .gallery-section {
   text-align: center;
   padding: 50px 20px;
@@ -196,20 +222,43 @@ body {
 }
 
 .gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 15px;
 }
 
 .gallery-box {
   height: 250px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-block;
+  width: calc(33.333% - 10px); /* Ensures 3 items per row */
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+}
+
+.gallery-box:nth-child(1) {
+  background-color: #FF6347; /* Tomato */
+}
+
+.gallery-box:nth-child(2) {
+  background-color: #32CD32; /* Lime Green */
+}
+
+.gallery-box:nth-child(3) {
+  background-color: #1E90FF; /* Dodger Blue */
+}
+
+.gallery-box:nth-child(4) {
+  background-color: #FFD700; /* Gold */
+}
+
+.gallery-box:nth-child(5) {
+  background-color: #8A2BE2; /* Blue Violet */
+}
+
+.gallery-box:nth-child(6) {
+  background-color: #FF1493; /* Deep Pink */
 }
 
 .gallery-box img {
@@ -236,17 +285,20 @@ body {
   gap: 20px;
 }
 
-.testimonial-box {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: left;
+.testimonial-box:nth-child(1) {
+  background: #FFD700; /* Gold */
 }
 
-.testimonial-box img {
-  width: 50px;
-  border-radius: 50%;
+.testimonial-box:nth-child(2) {
+  background: #8A2BE2; /* Blue Violet */
+}
+
+.testimonial-box:nth-child(3) {
+  background: #FF1493; /* Deep Pink */
+}
+
+.testimonial-box:nth-child(4) {
+  background: #FF6347; /* Tomato */
 }
 
 /* Footer Section */
